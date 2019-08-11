@@ -18,8 +18,8 @@ title: Capivara AI
 description: >- # this means to ignore newlines until "baseurl:"
 
 
-url: capivara-ai.github.io
-baseurl: /portal
+url: capivara.ai
+baseurl:
 
 #twitter_username:
 github_username: capivara-ai
