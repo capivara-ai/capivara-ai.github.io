@@ -36,6 +36,8 @@ languageNames:
   pt: Portugues
   en: English
 
+google_analytics: UA-145449483-1
+
 plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
