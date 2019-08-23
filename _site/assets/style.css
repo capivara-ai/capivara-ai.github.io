@@ -55,6 +55,18 @@ code { color: #DC3918; font-size: 16px; padding: 1px 0px; }
 .prose table tr { background-color: #fff; border-top: 1px solid #181818; }
 .prose table tr th { border-top: 2px solid #181818; border-bottom: 2px solid #181818; }
 
+.dropbtn { cursor: pointer; }
+
+.dropdown { position: relative; display: inline-block; }
+
+.dropdown-content { display: none; position: absolute; background-color: #f9f9f9; right: 0; box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); z-index: 1; }
+
+.dropdown-content a { padding: 12px 16px; text-decoration: none; display: block; }
+
+.dropdown-content a:hover { background-color: #f1f1f1; }
+
+.dropdown:hover .dropdown-content { display: block; }
+
 /* Type utilities */
 .h0 { font-size: 64px; line-height: 1.0125; margin-top: 0.85em; word-wrap: break-word; }
 @media (min-width: 52em) { .h0 { font-size: 128px; } }

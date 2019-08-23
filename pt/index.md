@@ -3,6 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-lang: en
-lang-ref: home-en
+lang: pt
+lang-ref: home-es
 ---

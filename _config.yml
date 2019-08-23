@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 url:
 baseurl:
 
-#twitter_username:
+twitter_username: capivara_ai
 github_username: capivara-ai
 remote_theme: broccolini/swiss
 theme_color: white
@@ -29,18 +29,11 @@ theme_color: white
 markdown: kramdown
 #theme: minima
 
-languages: ['pt', 'en']
-exclude_from_localizations: ['javascript', 'images', 'css']
-defaultLang: pt
-languageNames:
-  pt: Portugues
-  en: English
-
 google_analytics: UA-145449483-1
 
 plugins:
   - jekyll-feed
-  - jekyll-multiple-languages-plugin
+#  - jekyll-multiple-languages-plugin
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
