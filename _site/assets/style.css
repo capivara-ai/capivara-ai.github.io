@@ -9,7 +9,7 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { m
 /** Basic styling */
 body { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #181818; background-color: #fff; }
 
-p { margin-top: 0; margin-bottom: 0.5em; }
+p { margin-top: 0; margin-bottom: 0.5em; color: #181818; }
 
 h1, h2, h3, h4, h5, h6 { margin-top: 1em; margin-bottom: 0.25em; }
 
@@ -25,7 +25,7 @@ h5, .h5 { font-size: 16px; }
 
 h6, .h6 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.02em; }
 
-a { color: inherit; text-decoration: none; }
+a { text-decoration: none; }
 
 a:hover { text-decoration: underline; }
 
@@ -70,6 +70,19 @@ code { color: #DC3918; font-size: 16px; padding: 1px 0px; }
 .dropdown-content a:hover { background-color: #f1f1f1; }
 
 .dropdown:hover .dropdown-content { display: block; }
+
+.PostBlock { padding: 2em; }
+
+.PostBlock__image { text-align: center; }
+
+.PostBlock_title { color: #181818; padding-top: 0.5em; }
+@media (max-width: 540px) { .PostBlock_title { text-align: center; } }
+
+.PostBlock_date_author { color: #a9a9a9 !important; font-size: 0.9rem; }
+
+.PostBlock_link { width: 100%; }
+.PostBlock_link div { cursor: pointer; align-items: center; }
+.PostBlock_link:hover { text-decoration: none; }
 
 /* Type utilities */
 .h0 { font-size: 64px; line-height: 1.0125; margin-top: 0.85em; word-wrap: break-word; }
@@ -248,5 +261,5 @@ code { color: #DC3918; font-size: 16px; padding: 1px 0px; }
 .link-social { text-decoration: none; font-weight: bold; line-height: 1; }
 .link-social:hover { text-decoration: none !important; }
 
-.link-primary { font-weight: bold; text-decoration: none !important; }
+.link-primary { font-weight: bold; text-decoration: none !important; color: #181818; }
 .link-primary:hover { color: #DC3918; text-decoration: none !important; }

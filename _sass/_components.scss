@@ -170,3 +170,39 @@ code {
   display: block;
 }
 
+// Post Block Component
+.PostBlock{
+  padding: 2em;
+}
+.PostBlock__image {
+  text-align: center;
+}
+
+.PostBlock_title{
+  color: $font-color;
+  padding-top: 0.5em;
+
+  @media (max-width: $mobile-landscape) {
+    text-align: center;
+  }
+}
+
+.PostBlock_date_author {
+  color: $gray-dark !important;
+  font-size: $font-size-s;
+}
+
+.PostBlock_link{
+  width: 100%;
+  div{
+    cursor: pointer;
+    align-items: center;
+  }
+
+  &:hover {
+    text-decoration: none;
+
+  }
+}
+
+
