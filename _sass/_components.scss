@@ -197,13 +197,30 @@ code {
 }
 .HeaderFront__image{
   max-height: 400px;
+  @media (max-width: $mobile-landscape) {
+    max-height: 200px;
+  }
 }
+
+.HearderFront__wrapper{
+  position: absolute;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+
+
 
 .HeaderFront__text {
   padding: 1em 15em;
   font-size: large;
   a {
     color: black
+  }
+
+  @media (max-width: $mobile-landscape) {
+    font-size: small;
+    padding: 2em;
   }
 }
 
