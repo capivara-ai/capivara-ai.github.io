@@ -7,7 +7,7 @@ input, select, textarea, button { font-family: inherit; font-size: inherit; line
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
-body { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #181818; background-color: #fff; }
+body { font-family: "Open Sans", sans-serif !important; font-size: 16px; line-height: 1.5; color: #181818; background-color: #fff; }
 
 p { margin-top: 0; margin-bottom: 0.5em; color: #181818; }
 
@@ -28,10 +28,6 @@ h6, .h6 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.02em; }
 a { text-decoration: none; }
 
 a:hover { text-decoration: underline; }
-
-.HeaderFront { text-align: center; }
-
-.HeaderFront__image { max-height: 400px; }
 
 pre { border-left: 8px solid #ddd; margin: 32px 0; padding-left: 16px; width: 75%; overflow-x: auto; }
 
@@ -71,6 +67,17 @@ code { color: #DC3918; font-size: 16px; padding: 1px 0px; }
 
 .dropdown:hover .dropdown-content { display: block; }
 
+.HeaderFront { text-align: center; background: #F2F2F2; /* fallback for old browsers */ background: -webkit-linear-gradient(to right, #ADA996, #F2F2F2, #F2F2F2, #ADA996); /* Chrome 10-25, Safari 5.1-6 */ background: linear-gradient(to right, #ADA996, #F2F2F2, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 100; /* Just to keep it at the very top */ }
+
+.LanguageSwitcher { position: fixed; top: 0; right: 0; z-index: 101; /* Just to keep it at the very top */ }
+
+.btn-laguageSwitcher { background-color: transparent; }
+
+.HeaderFront__image { max-height: 400px; }
+
+.HeaderFront__text { padding: 1em 15em; font-size: large; }
+.HeaderFront__text a { color: black; }
+
 .PostBlock { padding: 2em; }
 
 .PostBlock__image { text-align: center; }
@@ -83,6 +90,8 @@ code { color: #DC3918; font-size: 16px; padding: 1px 0px; }
 .PostBlock_link { width: 100%; }
 .PostBlock_link div { cursor: pointer; align-items: center; }
 .PostBlock_link:hover { text-decoration: none; }
+
+.Navbar__logo { width: 50px; margin-left: 15px; }
 
 /* Type utilities */
 .h0 { font-size: 64px; line-height: 1.0125; margin-top: 0.85em; word-wrap: break-word; }

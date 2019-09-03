@@ -170,6 +170,43 @@ code {
   display: block;
 }
 
+// HeaderFront
+.HeaderFront{
+  text-align: center;
+  background: #F2F2F2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ADA996, #F2F2F2, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ADA996, #F2F2F2, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; /* Just to keep it at the very top */
+
+}
+.LanguageSwitcher{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 101; /* Just to keep it at the very top */
+}
+.btn-laguageSwitcher{
+  background-color: transparent;
+  //background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+}
+.HeaderFront__image{
+  max-height: 400px;
+}
+
+.HeaderFront__text {
+  padding: 1em 15em;
+  font-size: large;
+  a {
+    color: black
+  }
+}
+
 // Post Block Component
 .PostBlock{
   padding: 2em;
@@ -205,4 +242,9 @@ code {
   }
 }
 
+// Navbar block
+.Navbar__logo{
+  width: 50px;
+  margin-left: 15px;
+}
 

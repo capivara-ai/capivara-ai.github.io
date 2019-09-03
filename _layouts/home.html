@@ -4,58 +4,51 @@
 
   <body>
     <div>
-      <header class="header-background">
-        <div class="clearfix border-bottom-thick header-border">
-          <div class="right sm-width-full">
-            <ul class="list-reset right py-1 header-text font-smoothing">
-              <!-- Pages -->
-              {% assign pages = site.pages | where:"lang", page.lang %} {% for
-              my_page in pages %} {% if my_page.title %}
-              <li class="inline-block">
-                <a
-                  class="align-middle link-primary header-link mr-2"
-                  href="{{ my_page.url | prepend: site.baseurl }}"
+
+
+
+            <div class="LanguageSwitcher">
+              <div class="dropdown ">
+                <button
+                  class="btn btn-laguageSwitcher dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
                 >
-                  {{ my_page.title }}
-                </a>
-              </li>
-              {% endif %} {% endfor %}
-              <!--Language button -->
-              <li class="inline-block">
-                <div
-                  class="align-middle link-primary header-link mr-2 dropdown"
-                >
-                  <a class="dropbtn">{{
-                    site.data.translations['changeLanguage'][page.lang]
-                  }}</a>
-                  <div class="dropdown-content">
-                    <a href="{{ site.baseurl }}/pt/"
-                      >{{ site.data.languages['pt'].icon }}
-                      {{ site.data.languages['pt'].label }}</a
-                    >
-                    <a href="{{ site.baseurl }}/en/"
-                      >{{ site.data.languages['en'].icon }}
-                      {{ site.data.languages['en'].label }}</a
-                    >
-                  </div>
+                  {{ site.data.translations['changeLanguage'][page.lang] }}
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="{{ site.baseurl }}/pt/"
+                    >{{ site.data.languages['pt'].icon }}
+                    {{ site.data.languages['pt'].label }}</a
+                  >
+                  <a class="dropdown-item" href="{{ site.baseurl }}/en/"
+                    >{{ site.data.languages['en'].icon }}
+                    {{ site.data.languages['en'].label }}</a
+                  >
                 </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+              </div>
+            </div>
+
+
+
+
 
 
         <div class="jumbotron HeaderFront">
           <img class="HeaderFront__image" src="../assets/images/Capivara.png" alt="capivara-logo">
+          <div class="HeaderFront__text">
+          <p>{{ site.data.translations['description'][page.lang] }}</p>
+          <p>
+              {{ site.data.translations['contactUs'][page.lang] }}
+            </p>
+            <a href="https://github.com/capivara-ai" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+          </div>
         </div>
         <div>
-      </header>
 
-      <div class="container">
-        {% assign posts = site.posts | where:"lang", page.lang %} {% for post in
-        posts %} {% include post_block.html %} {% endfor %}
-      </div>
-    </div>
 
     {% include footer.html %}
   </body>

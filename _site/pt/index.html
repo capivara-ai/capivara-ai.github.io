@@ -38,6 +38,13 @@
     crossorigin="anonymous"
   />
 
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+    rel="stylesheet"
+  />
+
+  <script src="https://use.fontawesome.com/98cbe741ec.js"></script>
+
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Google Analytics -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -60,104 +67,51 @@
 
   <body>
     <div>
-      <header class="header-background">
-        <div class="clearfix border-bottom-thick header-border">
-          <div class="right sm-width-full">
-            <ul class="list-reset right py-1 header-text font-smoothing">
-              <!-- Pages -->
-                
-              <li class="inline-block">
-                <a
-                  class="align-middle link-primary header-link mr-2"
-                  href="/sobre/"
+
+
+
+            <div class="LanguageSwitcher">
+              <div class="dropdown ">
+                <button
+                  class="btn btn-laguageSwitcher dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
                 >
-                  Sobre
-                </a>
-              </li>
-                 
-              <!--Language button -->
-              <li class="inline-block">
-                <div
-                  class="align-middle link-primary header-link mr-2 dropdown"
-                >
-                  <a class="dropbtn">Idioma</a>
-                  <div class="dropdown-content">
-                    <a href="/pt/"
-                      >
-                      Português</a
+                  PT
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="/pt/"
                     >
-                    <a href="/en/"
-                      >
-                      English</a
+                    Português</a
+                  >
+                  <a class="dropdown-item" href="/en/"
                     >
-                  </div>
+                    English</a
+                  >
                 </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+              </div>
+            </div>
+
+
+
+
 
 
         <div class="jumbotron HeaderFront">
           <img class="HeaderFront__image" src="../assets/images/Capivara.png" alt="capivara-logo">
+          <div class="HeaderFront__text">
+          <p>Capivara.AI é uma plataforma voltada à criação de conteúdo sobre Processamento de Língua Natural (PLN). Nosso objetivo é desenvolver projetos open source de PLN &horbar; incluindo aplicações, frameworks, vídeo-aulas e tutoriais &horbar; para facilitar e incentivar trabalhos na área.</p>
+          <p>
+              Em breve novidades! Em caso de duvidas entre <a href="mailto:contact.capivara.ai@gmail.com">em contato</a>.
+            </p>
+            <a href="https://github.com/capivara-ai" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+          </div>
         </div>
         <div>
-      </header>
 
-      <div class="container">
-          <!-- Renders post date, title, and snippet of text. -->
-
-<a
-  class="PostBlock_link"
-  title="Leia Mais!"
-  href="/pt/2019/08/10/bienvenido-a-mi-blog.html"
->
-  <div class="row PostBlock">
-    <div class="col-sm-4 PostBlock__image">
-      <img src="/assets/images/post1-code.jpg" alt="Bem vindo ao meu blog" />
-    </div>
-    <div class="col-sm-8 ">
-      <h2 class="PostBlock_title">
-        Bem vindo ao meu blog
-      </h2>
-
-      <p class="PostBlock_date_author">
-        Aug 10, 2019, Lyssa Scherer
-      </p>
-      <p class="PostBlock_description">
-        Lorem ipsum praesent lectus congue enim feugiat turpis neque porttitor fringilla lorem elit fames sagittis, luctus dolor aliquet curabitur vulputate etiam scelerisque netus vehicula praesent habitasse eleifend. interdum cursus accumsan...
-      </p>
-    </div>
-  </div>
-</a>
-  <!-- Renders post date, title, and snippet of text. -->
-
-<a
-  class="PostBlock_link"
-  title="Leia Mais!"
-  href="/pt/2019/08/10/bienvenido-a-mi-blog-copy.html"
->
-  <div class="row PostBlock">
-    <div class="col-sm-4 PostBlock__image">
-      <img src="/assets/images/post1-code.jpg" alt="Bem vindo ao meu blog" />
-    </div>
-    <div class="col-sm-8 ">
-      <h2 class="PostBlock_title">
-        Bem vindo ao meu blog
-      </h2>
-
-      <p class="PostBlock_date_author">
-        Aug 10, 2019, Lyssa Scherer
-      </p>
-      <p class="PostBlock_description">
-        Lorem ipsum praesent lectus congue enim feugiat turpis neque porttitor fringilla lorem elit fames sagittis, luctus dolor aliquet curabitur vulputate etiam scelerisque netus vehicula praesent habitasse eleifend. interdum cursus accumsan...
-      </p>
-    </div>
-  </div>
-</a>
- 
-      </div>
-    </div>
 
     <div class="border-top-thin clearfix mt-2 mt-lg-4">
   <div class="container mx-auto px-2">
