@@ -17,5 +17,5 @@ readMore:
   pt: 'Leia Mais!'
 
 contactUs:
-  en: 'More information soon! If you are interested in the project, <a href="mailto:contact.capivara.ai@gmail.com">contact us</a>.'
-  pt: 'Em breve novidades! Em caso de duvidas entre <a href="mailto:contact.capivara.ai@gmail.com">em contato</a>.'
+  en: 'More information soon! If you are interested in the project, <a href="mailto:contact.capivara.ai@gmail.com" style="text-decoration: underline;">contact us</a>.'
+  pt: 'Mais informações em breve! Se tiver interesse no projeto, <a href="mailto:contact.capivara.ai@gmail.com" style="text-decoration: underline;">entre em contato</a>.'
